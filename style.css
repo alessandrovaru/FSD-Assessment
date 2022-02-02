@@ -13,11 +13,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .title-bar__button {
@@ -39,4 +39,104 @@ body {
   opacity: 75%;
 }
 
+.cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  padding-top: 40px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+@media (max-width: 968px) {
+  .cards-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding: 16px;
+  min-width: 300px;
+  min-height: 550px;
+  margin: 0px 22px 20px 0px;
+  background: #ffffff;
+  border: 1px solid #ffc700;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media (max-width: 968px) {
+  .card {
+    margin: 20px 0px;
+  }
+}
+
+.card h2 {
+  font-family: Space Grotesk;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+}
+
+.card button {
+  background-color: #ffc700;
+  text-transform: uppercase;
+}
+
+.card p {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+
+.card-img {
+  width: 261.68px;
+  height: 324.68px;
+  background-size: cover;
+  background-position: center;
+  background-color: #ffc700;
+}
+
+.gender {
+  position: absolute;
+  left: 0px;
+  top: 20px;
+  background-color: #ffc700;
+  padding: 10px;
+  text-transform: uppercase;
+}
 /*# sourceMappingURL=style.css.map */
